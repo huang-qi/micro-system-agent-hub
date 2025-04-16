@@ -38,7 +38,7 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Chatbot iframe */}
+        {/* Chatbot iframe - reduced height and added better styling */}
         <div className="mb-16">
           <iframe
             src="https://udify.app/chatbot/WueWtinbjKErkQck"
