@@ -8,7 +8,14 @@ const Index = () => {
       {/* Header Section */}
       <header className="w-full bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">
+          <div className="flex justify-center items-center">
+            <img 
+              src="https://sim.cas.cn/images/simtlogo.png" 
+              alt="SIMIT Logo"
+              className="h-16 object-contain"
+            />
+          </div>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center mt-4">
             中国科学院上海微系统与信息技术研究所
           </h1>
         </div>
@@ -21,8 +28,19 @@ const Index = () => {
             ICMagent
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            基于大规模数据的智能材料科学与工程平台
+            集成电路材料大模型
           </p>
+        </div>
+
+        {/* Chatbot iframe */}
+        <div className="mb-16">
+          <iframe
+            src="https://udify.app/chatbot/WueWtinbjKErkQck"
+            style={{ width: '100%', height: '700px' }}
+            frameBorder="0"
+            allow="microphone"
+            title="ICMagent Chatbot"
+          />
         </div>
 
         {/* Main Feature Cards */}
@@ -81,3 +99,4 @@ const Index = () => {
 };
 
 export default Index;
+
